@@ -1,6 +1,6 @@
 var $artista = $('#artista'),
-		$buscar = $('#buscar'),
-		$resultado = $('#resultado');
+	$buscar = $('#buscar'),
+	$resultado = $('#resultado');
 
 function buscarArtista (){
 	var artista = $artista.val(),
@@ -64,6 +64,4 @@ function presentarArtista( data ){
 
 	$resultado.html ( html );
 
-}
-
-	$buscar.on('click', buscarArtista);
+}$buscar.on('click', buscarArtista);

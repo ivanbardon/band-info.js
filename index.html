@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="estilos.css">
 	<title>Band.info</title>
 </head>
-<body>
+<body onload="capturaEnter()">
 	<div class="container">
 	    <div>
 		    <h1>Band.info <small>rápido y sencillo</small></h1>
@@ -14,8 +15,10 @@
 			
 	    </div>
 	    <div>
-		    <input type="text" id="artista" placeholder="Artista" autofocus="" onsubmit="buscarArtista()">
-		    <button type="button"id="buscar">Buscar</button>
+		    <form action="buscarArtista()">
+				<input type="text" id="artista" autofocus=""><br>
+				<input type="submit" value="Buscar">
+			</form>
 		</div>
 		<!-- Apartado para los resultados -->
 		<br>
